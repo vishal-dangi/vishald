@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState } from 'react'
 import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/router';
-import Kml, { Paji } from './component/Practice';
+
 
 export default function Home() {
   const [input,setInput]=useState({
@@ -44,7 +44,7 @@ export default function Home() {
       <div className="container grid grid-cols-2 gap-3" >
         <div>
           <h1 className="font-medium font-serif  text-4xl mt-32 ml-6">My web home page</h1>
-          <img className="m-20 w-60" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          <img className="m-20 w-60 rounded hover:translate-y-2 duration-700" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
             alt="image" />
         </div>
 
@@ -63,8 +63,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Kml/>
-      <Paji/>
+      
     </>
   )
 }
